@@ -1,0 +1,2153 @@
+{
+ "name": "last-signature",
+ "tree": {
+  "$className": "DataModel",
+  "Lighting": {
+   "$properties": {
+    "Ambient": [
+     0.5,
+     0.45,
+     0.4
+    ],
+    "Brightness": 2.5,
+    "ClockTime": 15,
+    "GlobalShadows": true,
+    "Outlines": false,
+    "Technology": "ShadowMap"
+   }
+  },
+  "Players": {
+   "$properties": {
+    "CharacterAutoLoads": true
+   }
+  },
+  "ReplicatedStorage": {
+   "ShowMemory": {
+    "$className": "RemoteEvent"
+   },
+   "ShowChoice": {
+    "$className": "RemoteEvent"
+   },
+   "ShowCodeEntry": {
+    "$className": "RemoteEvent"
+   },
+   "ShowEnding": {
+    "$className": "RemoteEvent"
+   },
+   "ShowSubtitle": {
+    "$className": "RemoteEvent"
+   },
+   "ShowTitle": {
+    "$className": "RemoteEvent"
+   },
+   "UpdateHUD": {
+    "$className": "RemoteEvent"
+   },
+   "ChoiceMade": {
+    "$className": "RemoteEvent"
+   },
+   "CodeEntered": {
+    "$className": "RemoteEvent"
+   },
+   "RequestStart": {
+    "$className": "RemoteEvent"
+   },
+   "RestartGame": {
+    "$className": "RemoteEvent"
+   },
+   "Shared": {
+    "Config": {
+     "$path": "src/shared/Config.luau"
+    },
+    "$className": "Folder"
+   }
+  },
+  "ServerScriptService": {
+   "Server": {
+    "$path": "src/server"
+   }
+  },
+  "SoundService": {
+   "$properties": {
+    "RespectFilteringEnabled": true
+   }
+  },
+  "StarterPlayer": {
+   "StarterPlayerScripts": {
+    "Client": {
+     "$path": "src/client"
+    }
+   }
+  },
+  "Workspace": {
+   "$properties": {
+    "FilteringEnabled": true
+   },
+   "HallFloor": {
+    "$className": "Part",
+    "$properties": {
+     "Anchored": true,
+     "BottomSurface": "Smooth",
+     "CanCollide": true,
+     "Color": [
+      0.45,
+      0.32,
+      0.2
+     ],
+     "Material": "Wood",
+     "CFrame": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0.5,
+      4
+     ],
+     "Size": [
+      16,
+      1,
+      12
+     ],
+     "TopSurface": "Smooth"
+    }
+   },
+   "LivingFloor": {
+    "$className": "Part",
+    "$properties": {
+     "Anchored": true,
+     "BottomSurface": "Smooth",
+     "CanCollide": true,
+     "Color": [
+      0.45,
+      0.32,
+      0.2
+     ],
+     "Material": "Wood",
+     "CFrame": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      -19,
+      0.5,
+      -1
+     ],
+     "Size": [
+      22,
+      1,
+      22
+     ],
+     "TopSurface": "Smooth"
+    }
+   },
+   "StudyFloor": {
+    "$className": "Part",
+    "$properties": {
+     "Anchored": true,
+     "BottomSurface": "Smooth",
+     "CanCollide": true,
+     "Color": [
+      0.45,
+      0.32,
+      0.2
+     ],
+     "Material": "Wood",
+     "CFrame": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      19,
+      0.5,
+      -1
+     ],
+     "Size": [
+      22,
+      1,
+      22
+     ],
+     "TopSurface": "Smooth"
+    }
+   },
+   "BedroomFloor": {
+    "$className": "Part",
+    "$properties": {
+     "Anchored": true,
+     "BottomSurface": "Smooth",
+     "CanCollide": true,
+     "Color": [
+      0.45,
+      0.32,
+      0.2
+     ],
+     "Material": "Wood",
+     "CFrame": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0.5,
+      -23
+     ],
+     "Size": [
+      16,
+      1,
+      22
+     ],
+     "TopSurface": "Smooth"
+    }
+   },
+   "HiddenFloor": {
+    "$className": "Part",
+    "$properties": {
+     "Anchored": true,
+     "BottomSurface": "Smooth",
+     "CanCollide": true,
+     "Color": [
+      0.35,
+      0.25,
+      0.18
+     ],
+     "Material": "Wood",
+     "CFrame": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0.5,
+      -40
+     ],
+     "Size": [
+      16,
+      1,
+      12
+     ],
+     "TopSurface": "Smooth"
+    }
+   },
+   "SecretFloor": {
+    "$className": "Part",
+    "$properties": {
+     "Anchored": true,
+     "BottomSurface": "Smooth",
+     "CanCollide": true,
+     "Color": [
+      0.25,
+      0.22,
+      0.3
+     ],
+     "Material": "Wood",
+     "CFrame": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0.5,
+      -52
+     ],
+     "Size": [
+      16,
+      1,
+      12
+     ],
+     "TopSurface": "Smooth"
+    }
+   },
+   "SouthWallW": {
+    "$className": "Part",
+    "$properties": {
+     "Anchored": true,
+     "BottomSurface": "Smooth",
+     "CanCollide": true,
+     "Color": [
+      0.85,
+      0.8,
+      0.7
+     ],
+     "Material": "SmoothPlastic",
+     "CFrame": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      -16,
+      4,
+      10
+     ],
+     "Size": [
+      28,
+      8,
+      1
+     ],
+     "TopSurface": "Smooth"
+    }
+   },
+   "SouthWallE": {
+    "$className": "Part",
+    "$properties": {
+     "Anchored": true,
+     "BottomSurface": "Smooth",
+     "CanCollide": true,
+     "Color": [
+      0.85,
+      0.8,
+      0.7
+     ],
+     "Material": "SmoothPlastic",
+     "CFrame": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      16,
+      4,
+      10
+     ],
+     "Size": [
+      28,
+      8,
+      1
+     ],
+     "TopSurface": "Smooth"
+    }
+   },
+   "SouthLintel": {
+    "$className": "Part",
+    "$properties": {
+     "Anchored": true,
+     "BottomSurface": "Smooth",
+     "CanCollide": true,
+     "Color": [
+      0.85,
+      0.8,
+      0.7
+     ],
+     "Material": "SmoothPlastic",
+     "CFrame": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      7,
+      10
+     ],
+     "Size": [
+      4,
+      2,
+      1
+     ],
+     "TopSurface": "Smooth"
+    }
+   },
+   "NorthWall": {
+    "$className": "Part",
+    "$properties": {
+     "Anchored": true,
+     "BottomSurface": "Smooth",
+     "CanCollide": true,
+     "Color": [
+      0.85,
+      0.8,
+      0.7
+     ],
+     "Material": "SmoothPlastic",
+     "CFrame": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      4,
+      -58
+     ],
+     "Size": [
+      60,
+      8,
+      1
+     ],
+     "TopSurface": "Smooth"
+    }
+   },
+   "WestWall": {
+    "$className": "Part",
+    "$properties": {
+     "Anchored": true,
+     "BottomSurface": "Smooth",
+     "CanCollide": true,
+     "Color": [
+      0.85,
+      0.8,
+      0.7
+     ],
+     "Material": "SmoothPlastic",
+     "CFrame": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      -30,
+      4,
+      -24
+     ],
+     "Size": [
+      1,
+      8,
+      68
+     ],
+     "TopSurface": "Smooth"
+    }
+   },
+   "EastWall": {
+    "$className": "Part",
+    "$properties": {
+     "Anchored": true,
+     "BottomSurface": "Smooth",
+     "CanCollide": true,
+     "Color": [
+      0.85,
+      0.8,
+      0.7
+     ],
+     "Material": "SmoothPlastic",
+     "CFrame": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      30,
+      4,
+      -24
+     ],
+     "Size": [
+      1,
+      8,
+      68
+     ],
+     "TopSurface": "Smooth"
+    }
+   },
+   "DivW1": {
+    "$className": "Part",
+    "$properties": {
+     "Anchored": true,
+     "BottomSurface": "Smooth",
+     "CanCollide": true,
+     "Color": [
+      0.85,
+      0.8,
+      0.7
+     ],
+     "Material": "SmoothPlastic",
+     "CFrame": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      -8,
+      4,
+      -5
+     ],
+     "Size": [
+      1,
+      8,
+      14
+     ],
+     "TopSurface": "Smooth"
+    }
+   },
+   "DivW2": {
+    "$className": "Part",
+    "$properties": {
+     "Anchored": true,
+     "BottomSurface": "Smooth",
+     "CanCollide": true,
+     "Color": [
+      0.85,
+      0.8,
+      0.7
+     ],
+     "Material": "SmoothPlastic",
+     "CFrame": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      -8,
+      4,
+      8
+     ],
+     "Size": [
+      1,
+      8,
+      4
+     ],
+     "TopSurface": "Smooth"
+    }
+   },
+   "DivE1": {
+    "$className": "Part",
+    "$properties": {
+     "Anchored": true,
+     "BottomSurface": "Smooth",
+     "CanCollide": true,
+     "Color": [
+      0.85,
+      0.8,
+      0.7
+     ],
+     "Material": "SmoothPlastic",
+     "CFrame": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      8,
+      4,
+      -5
+     ],
+     "Size": [
+      1,
+      8,
+      14
+     ],
+     "TopSurface": "Smooth"
+    }
+   },
+   "DivE2": {
+    "$className": "Part",
+    "$properties": {
+     "Anchored": true,
+     "BottomSurface": "Smooth",
+     "CanCollide": true,
+     "Color": [
+      0.85,
+      0.8,
+      0.7
+     ],
+     "Material": "SmoothPlastic",
+     "CFrame": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      8,
+      4,
+      8
+     ],
+     "Size": [
+      1,
+      8,
+      4
+     ],
+     "TopSurface": "Smooth"
+    }
+   },
+   "DivN1": {
+    "$className": "Part",
+    "$properties": {
+     "Anchored": true,
+     "BottomSurface": "Smooth",
+     "CanCollide": true,
+     "Color": [
+      0.85,
+      0.8,
+      0.7
+     ],
+     "Material": "SmoothPlastic",
+     "CFrame": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      -5,
+      4,
+      -12
+     ],
+     "Size": [
+      6,
+      8,
+      1
+     ],
+     "TopSurface": "Smooth"
+    }
+   },
+   "DivN2": {
+    "$className": "Part",
+    "$properties": {
+     "Anchored": true,
+     "BottomSurface": "Smooth",
+     "CanCollide": true,
+     "Color": [
+      0.85,
+      0.8,
+      0.7
+     ],
+     "Material": "SmoothPlastic",
+     "CFrame": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      5,
+      4,
+      -12
+     ],
+     "Size": [
+      6,
+      8,
+      1
+     ],
+     "TopSurface": "Smooth"
+    }
+   },
+   "DivNLintel": {
+    "$className": "Part",
+    "$properties": {
+     "Anchored": true,
+     "BottomSurface": "Smooth",
+     "CanCollide": true,
+     "Color": [
+      0.85,
+      0.8,
+      0.7
+     ],
+     "Material": "SmoothPlastic",
+     "CFrame": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      7,
+      -12
+     ],
+     "Size": [
+      4,
+      2,
+      1
+     ],
+     "TopSurface": "Smooth"
+    }
+   },
+   "DivB1": {
+    "$className": "Part",
+    "$properties": {
+     "Anchored": true,
+     "BottomSurface": "Smooth",
+     "CanCollide": true,
+     "Color": [
+      0.85,
+      0.8,
+      0.7
+     ],
+     "Material": "SmoothPlastic",
+     "CFrame": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      -5,
+      4,
+      -34
+     ],
+     "Size": [
+      6,
+      8,
+      1
+     ],
+     "TopSurface": "Smooth"
+    }
+   },
+   "DivB2": {
+    "$className": "Part",
+    "$properties": {
+     "Anchored": true,
+     "BottomSurface": "Smooth",
+     "CanCollide": true,
+     "Color": [
+      0.85,
+      0.8,
+      0.7
+     ],
+     "Material": "SmoothPlastic",
+     "CFrame": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      5,
+      4,
+      -34
+     ],
+     "Size": [
+      6,
+      8,
+      1
+     ],
+     "TopSurface": "Smooth"
+    }
+   },
+   "DivBLintel": {
+    "$className": "Part",
+    "$properties": {
+     "Anchored": true,
+     "BottomSurface": "Smooth",
+     "CanCollide": true,
+     "Color": [
+      0.85,
+      0.8,
+      0.7
+     ],
+     "Material": "SmoothPlastic",
+     "CFrame": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      7.5,
+      -34
+     ],
+     "Size": [
+      4,
+      1,
+      1
+     ],
+     "TopSurface": "Smooth"
+    }
+   },
+   "DivS1": {
+    "$className": "Part",
+    "$properties": {
+     "Anchored": true,
+     "BottomSurface": "Smooth",
+     "CanCollide": true,
+     "Color": [
+      0.85,
+      0.8,
+      0.7
+     ],
+     "Material": "SmoothPlastic",
+     "CFrame": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      -5,
+      4,
+      -46
+     ],
+     "Size": [
+      6,
+      8,
+      1
+     ],
+     "TopSurface": "Smooth"
+    }
+   },
+   "DivS2": {
+    "$className": "Part",
+    "$properties": {
+     "Anchored": true,
+     "BottomSurface": "Smooth",
+     "CanCollide": true,
+     "Color": [
+      0.85,
+      0.8,
+      0.7
+     ],
+     "Material": "SmoothPlastic",
+     "CFrame": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      5,
+      4,
+      -46
+     ],
+     "Size": [
+      6,
+      8,
+      1
+     ],
+     "TopSurface": "Smooth"
+    }
+   },
+   "DivSLintel": {
+    "$className": "Part",
+    "$properties": {
+     "Anchored": true,
+     "BottomSurface": "Smooth",
+     "CanCollide": true,
+     "Color": [
+      0.85,
+      0.8,
+      0.7
+     ],
+     "Material": "SmoothPlastic",
+     "CFrame": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      7.5,
+      -46
+     ],
+     "Size": [
+      4,
+      1,
+      1
+     ],
+     "TopSurface": "Smooth"
+    }
+   },
+   "SpawnLocation": {
+    "$className": "SpawnLocation",
+    "$properties": {
+     "Anchored": true,
+     "BottomSurface": "Smooth",
+     "CanCollide": false,
+     "Color": [
+      0.2,
+      0.6,
+      0.2
+     ],
+     "CFrame": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0.6,
+      8
+     ],
+     "Size": [
+      6,
+      1,
+      6
+     ],
+     "TopSurface": "Smooth",
+     "Duration": 0,
+     "Neutral": true
+    }
+   },
+   "EnvelopeTable": {
+    "$className": "Part",
+    "$properties": {
+     "Anchored": true,
+     "BottomSurface": "Smooth",
+     "CanCollide": true,
+     "Color": [
+      0.35,
+      0.25,
+      0.15
+     ],
+     "Material": "Wood",
+     "CFrame": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      -5,
+      2,
+      8
+     ],
+     "Size": [
+      4,
+      2,
+      2
+     ],
+     "TopSurface": "Smooth"
+    }
+   },
+   "Envelope": {
+    "$className": "Part",
+    "$properties": {
+     "Anchored": true,
+     "BottomSurface": "Smooth",
+     "CanCollide": false,
+     "Color": [
+      0.95,
+      0.93,
+      0.85
+     ],
+     "Material": "SmoothPlastic",
+     "CFrame": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      -5,
+      3.1,
+      8
+     ],
+     "Size": [
+      1.5,
+      0.2,
+      1
+     ],
+     "TopSurface": "Smooth"
+    },
+    "Interact": {
+     "$className": "ProximityPrompt",
+     "$properties": {
+      "ActionText": "Read",
+      "ObjectText": "The envelope",
+      "HoldDuration": 0,
+      "MaxActivationDistance": 6,
+      "RequiresLineOfSight": false
+     }
+    }
+   },
+   "HallTable": {
+    "$className": "Part",
+    "$properties": {
+     "Anchored": true,
+     "BottomSurface": "Smooth",
+     "CanCollide": true,
+     "Color": [
+      0.35,
+      0.25,
+      0.15
+     ],
+     "Material": "Wood",
+     "CFrame": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      5,
+      2,
+      8
+     ],
+     "Size": [
+      3,
+      2,
+      2
+     ],
+     "TopSurface": "Smooth"
+    }
+   },
+   "Telephone": {
+    "$className": "Part",
+    "$properties": {
+     "Anchored": true,
+     "BottomSurface": "Smooth",
+     "CanCollide": false,
+     "Color": [
+      0.15,
+      0.15,
+      0.18
+     ],
+     "Material": "SmoothPlastic",
+     "CFrame": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      5,
+      3,
+      8
+     ],
+     "Size": [
+      1.5,
+      1,
+      1
+     ],
+     "TopSurface": "Smooth"
+    },
+    "Interact": {
+     "$className": "ProximityPrompt",
+     "$properties": {
+      "ActionText": "Use",
+      "ObjectText": "Telephone",
+      "HoldDuration": 0,
+      "MaxActivationDistance": 6,
+      "RequiresLineOfSight": false
+     }
+    }
+   },
+   "Rug": {
+    "$className": "Part",
+    "$properties": {
+     "Anchored": true,
+     "BottomSurface": "Smooth",
+     "CanCollide": false,
+     "Color": [
+      0.5,
+      0.1,
+      0.15
+     ],
+     "Material": "Fabric",
+     "CFrame": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      1.1,
+      4
+     ],
+     "Size": [
+      8,
+      0.2,
+      6
+     ],
+     "TopSurface": "Smooth"
+    }
+   },
+   "FrontDoor": {
+    "$className": "Part",
+    "$properties": {
+     "Anchored": true,
+     "BottomSurface": "Smooth",
+     "CanCollide": true,
+     "Color": [
+      0.35,
+      0.25,
+      0.15
+     ],
+     "Material": "Wood",
+     "CFrame": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      3,
+      4.5,
+      8
+     ],
+     "Size": [
+      0.5,
+      7,
+      4
+     ],
+     "TopSurface": "Smooth"
+    }
+   },
+   "Sofa": {
+    "$className": "Part",
+    "$properties": {
+     "Anchored": true,
+     "BottomSurface": "Smooth",
+     "CanCollide": true,
+     "Color": [
+      0.5,
+      0.15,
+      0.15
+     ],
+     "Material": "Fabric",
+     "CFrame": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      -24,
+      2,
+      6
+     ],
+     "Size": [
+      8,
+      2,
+      3
+     ],
+     "TopSurface": "Smooth"
+    }
+   },
+   "CoffeeTable": {
+    "$className": "Part",
+    "$properties": {
+     "Anchored": true,
+     "BottomSurface": "Smooth",
+     "CanCollide": true,
+     "Color": [
+      0.35,
+      0.25,
+      0.15
+     ],
+     "Material": "Wood",
+     "CFrame": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      -24,
+      1.5,
+      0
+     ],
+     "Size": [
+      5,
+      1,
+      3
+     ],
+     "TopSurface": "Smooth"
+    }
+   },
+   "Photograph": {
+    "$className": "Part",
+    "$properties": {
+     "Anchored": true,
+     "BottomSurface": "Smooth",
+     "CanCollide": false,
+     "Color": [
+      0.9,
+      0.75,
+      0.3
+     ],
+     "Material": "SmoothPlastic",
+     "CFrame": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      -24,
+      4,
+      9.8
+     ],
+     "Size": [
+      3,
+      2,
+      0.3
+     ],
+     "TopSurface": "Smooth"
+    },
+    "Interact": {
+     "$className": "ProximityPrompt",
+     "$properties": {
+      "ActionText": "Look",
+      "ObjectText": "Old photograph",
+      "HoldDuration": 0,
+      "MaxActivationDistance": 6,
+      "RequiresLineOfSight": false
+     }
+    }
+   },
+   "KeyDrawer": {
+    "$className": "Part",
+    "$properties": {
+     "Anchored": true,
+     "BottomSurface": "Smooth",
+     "CanCollide": true,
+     "Color": [
+      0.35,
+      0.25,
+      0.15
+     ],
+     "Material": "Wood",
+     "CFrame": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      -14,
+      2.5,
+      8
+     ],
+     "Size": [
+      4,
+      3,
+      2
+     ],
+     "TopSurface": "Smooth"
+    },
+    "Interact": {
+     "$className": "ProximityPrompt",
+     "$properties": {
+      "ActionText": "Open",
+      "ObjectText": "Drawer",
+      "HoldDuration": 0,
+      "MaxActivationDistance": 6,
+      "RequiresLineOfSight": false
+     }
+    }
+   },
+   "Fireplace": {
+    "$className": "Part",
+    "$properties": {
+     "Anchored": true,
+     "BottomSurface": "Smooth",
+     "CanCollide": true,
+     "Color": [
+      0.4,
+      0.35,
+      0.35
+     ],
+     "Material": "Slate",
+     "CFrame": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      -29.5,
+      3,
+      -1
+     ],
+     "Size": [
+      6,
+      4,
+      1
+     ],
+     "TopSurface": "Smooth"
+    }
+   },
+   "Bookshelf": {
+    "$className": "Part",
+    "$properties": {
+     "Anchored": true,
+     "BottomSurface": "Smooth",
+     "CanCollide": true,
+     "Color": [
+      0.35,
+      0.25,
+      0.15
+     ],
+     "Material": "Wood",
+     "CFrame": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      -29.5,
+      4,
+      -8
+     ],
+     "Size": [
+      6,
+      6,
+      1
+     ],
+     "TopSurface": "Smooth"
+    }
+   },
+   "Desk": {
+    "$className": "Part",
+    "$properties": {
+     "Anchored": true,
+     "BottomSurface": "Smooth",
+     "CanCollide": true,
+     "Color": [
+      0.35,
+      0.25,
+      0.15
+     ],
+     "Material": "Wood",
+     "CFrame": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      20,
+      2,
+      6
+     ],
+     "Size": [
+      8,
+      2,
+      4
+     ],
+     "TopSurface": "Smooth"
+    }
+   },
+   "Letter": {
+    "$className": "Part",
+    "$properties": {
+     "Anchored": true,
+     "BottomSurface": "Smooth",
+     "CanCollide": false,
+     "Color": [
+      0.95,
+      0.93,
+      0.85
+     ],
+     "Material": "SmoothPlastic",
+     "CFrame": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      18,
+      3.1,
+      6
+     ],
+     "Size": [
+      1.5,
+      0.2,
+      1
+     ],
+     "TopSurface": "Smooth"
+    },
+    "Interact": {
+     "$className": "ProximityPrompt",
+     "$properties": {
+      "ActionText": "Read",
+      "ObjectText": "Unsent letter",
+      "HoldDuration": 0,
+      "MaxActivationDistance": 6,
+      "RequiresLineOfSight": false
+     }
+    }
+   },
+   "Pen": {
+    "$className": "Part",
+    "$properties": {
+     "Anchored": true,
+     "BottomSurface": "Smooth",
+     "CanCollide": false,
+     "Color": [
+      0.1,
+      0.1,
+      0.1
+     ],
+     "Material": "SmoothPlastic",
+     "CFrame": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      22,
+      3.1,
+      6
+     ],
+     "Size": [
+      1,
+      0.2,
+      0.3
+     ],
+     "TopSurface": "Smooth"
+    },
+    "Interact": {
+     "$className": "ProximityPrompt",
+     "$properties": {
+      "ActionText": "Take",
+      "ObjectText": "Old pen",
+      "HoldDuration": 0,
+      "MaxActivationDistance": 6,
+      "RequiresLineOfSight": false
+     }
+    }
+   },
+   "LockedDrawer": {
+    "$className": "Part",
+    "$properties": {
+     "Anchored": true,
+     "BottomSurface": "Smooth",
+     "CanCollide": true,
+     "Color": [
+      0.35,
+      0.25,
+      0.15
+     ],
+     "Material": "Wood",
+     "CFrame": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      14,
+      2.5,
+      8
+     ],
+     "Size": [
+      4,
+      3,
+      2
+     ],
+     "TopSurface": "Smooth"
+    },
+    "Interact": {
+     "$className": "ProximityPrompt",
+     "$properties": {
+      "ActionText": "Unlock",
+      "ObjectText": "Locked drawer",
+      "HoldDuration": 0,
+      "MaxActivationDistance": 6,
+      "RequiresLineOfSight": false
+     }
+    }
+   },
+   "Will": {
+    "$className": "Part",
+    "$properties": {
+     "Anchored": true,
+     "BottomSurface": "Smooth",
+     "CanCollide": false,
+     "Color": [
+      0.95,
+      0.93,
+      0.85
+     ],
+     "Material": "SmoothPlastic",
+     "CFrame": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      14,
+      4.2,
+      8
+     ],
+     "Size": [
+      1.5,
+      0.2,
+      1
+     ],
+     "TopSurface": "Smooth",
+     "Transparency": 1
+    },
+    "Interact": {
+     "$className": "ProximityPrompt",
+     "$properties": {
+      "ActionText": "Read",
+      "ObjectText": "The will",
+      "HoldDuration": 0,
+      "MaxActivationDistance": 6,
+      "RequiresLineOfSight": false,
+      "Enabled": false
+     }
+    }
+   },
+   "Bookshelf2": {
+    "$className": "Part",
+    "$properties": {
+     "Anchored": true,
+     "BottomSurface": "Smooth",
+     "CanCollide": true,
+     "Color": [
+      0.35,
+      0.25,
+      0.15
+     ],
+     "Material": "Wood",
+     "CFrame": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      29.5,
+      4,
+      -2
+     ],
+     "Size": [
+      8,
+      6,
+      1
+     ],
+     "TopSurface": "Smooth"
+    }
+   },
+   "Chair": {
+    "$className": "Part",
+    "$properties": {
+     "Anchored": true,
+     "BottomSurface": "Smooth",
+     "CanCollide": true,
+     "Color": [
+      0.35,
+      0.25,
+      0.15
+     ],
+     "Material": "Wood",
+     "CFrame": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      20,
+      2,
+      0
+     ],
+     "Size": [
+      3,
+      2,
+      3
+     ],
+     "TopSurface": "Smooth"
+    }
+   },
+   "Bed": {
+    "$className": "Part",
+    "$properties": {
+     "Anchored": true,
+     "BottomSurface": "Smooth",
+     "CanCollide": true,
+     "Color": [
+      0.3,
+      0.35,
+      0.5
+     ],
+     "Material": "Fabric",
+     "CFrame": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      -4,
+      1.75,
+      -20
+     ],
+     "Size": [
+      6,
+      1.5,
+      8
+     ],
+     "TopSurface": "Smooth"
+    }
+   },
+   "Dresser": {
+    "$className": "Part",
+    "$properties": {
+     "Anchored": true,
+     "BottomSurface": "Smooth",
+     "CanCollide": true,
+     "Color": [
+      0.35,
+      0.25,
+      0.15
+     ],
+     "Material": "Wood",
+     "CFrame": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      5,
+      2.5,
+      -30
+     ],
+     "Size": [
+      5,
+      3,
+      2
+     ],
+     "TopSurface": "Smooth"
+    }
+   },
+   "Watch": {
+    "$className": "Part",
+    "$properties": {
+     "Anchored": true,
+     "BottomSurface": "Smooth",
+     "CanCollide": false,
+     "Color": [
+      0.7,
+      0.7,
+      0.75
+     ],
+     "Material": "SmoothPlastic",
+     "CFrame": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      5,
+      4.2,
+      -30
+     ],
+     "Size": [
+      1,
+      0.3,
+      1
+     ],
+     "TopSurface": "Smooth"
+    },
+    "Interact": {
+     "$className": "ProximityPrompt",
+     "$properties": {
+      "ActionText": "Look",
+      "ObjectText": "Broken watch",
+      "HoldDuration": 0,
+      "MaxActivationDistance": 6,
+      "RequiresLineOfSight": false
+     }
+    }
+   },
+   "BlueDoor": {
+    "$className": "Part",
+    "$properties": {
+     "Anchored": true,
+     "BottomSurface": "Smooth",
+     "CanCollide": true,
+     "Color": [
+      0.1,
+      0.3,
+      0.85
+     ],
+     "Material": "SmoothPlastic",
+     "CFrame": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      4.5,
+      -34
+     ],
+     "Size": [
+      4,
+      7,
+      0.5
+     ],
+     "TopSurface": "Smooth"
+    },
+    "Interact": {
+     "$className": "ProximityPrompt",
+     "$properties": {
+      "ActionText": "Open",
+      "ObjectText": "Blue door",
+      "HoldDuration": 0,
+      "MaxActivationDistance": 6,
+      "RequiresLineOfSight": false
+     }
+    }
+   },
+   "BedsideTable": {
+    "$className": "Part",
+    "$properties": {
+     "Anchored": true,
+     "BottomSurface": "Smooth",
+     "CanCollide": true,
+     "Color": [
+      0.35,
+      0.25,
+      0.15
+     ],
+     "Material": "Wood",
+     "CFrame": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      6,
+      2,
+      -16
+     ],
+     "Size": [
+      2,
+      2,
+      2
+     ],
+     "TopSurface": "Smooth"
+    }
+   },
+   "OldChest": {
+    "$className": "Part",
+    "$properties": {
+     "Anchored": true,
+     "BottomSurface": "Smooth",
+     "CanCollide": true,
+     "Color": [
+      0.35,
+      0.25,
+      0.15
+     ],
+     "Material": "Wood",
+     "CFrame": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      -4,
+      2,
+      -40
+     ],
+     "Size": [
+      4,
+      2,
+      3
+     ],
+     "TopSurface": "Smooth"
+    }
+   },
+   "Portrait": {
+    "$className": "Part",
+    "$properties": {
+     "Anchored": true,
+     "BottomSurface": "Smooth",
+     "CanCollide": false,
+     "Color": [
+      0.9,
+      0.75,
+      0.3
+     ],
+     "Material": "SmoothPlastic",
+     "CFrame": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      7.8,
+      4,
+      -40
+     ],
+     "Size": [
+      3,
+      4,
+      0.3
+     ],
+     "TopSurface": "Smooth"
+    }
+   },
+   "SecretDoor": {
+    "$className": "Part",
+    "$properties": {
+     "Anchored": true,
+     "BottomSurface": "Smooth",
+     "CanCollide": true,
+     "Color": [
+      0.3,
+      0.2,
+      0.12
+     ],
+     "Material": "SmoothPlastic",
+     "CFrame": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      4.5,
+      -46
+     ],
+     "Size": [
+      4,
+      7,
+      0.5
+     ],
+     "TopSurface": "Smooth"
+    },
+    "Interact": {
+     "$className": "ProximityPrompt",
+     "$properties": {
+      "ActionText": "Open",
+      "ObjectText": "Hidden door",
+      "HoldDuration": 0,
+      "MaxActivationDistance": 6,
+      "RequiresLineOfSight": false
+     }
+    }
+   },
+   "HiddenRoomTrigger": {
+    "$className": "Part",
+    "$properties": {
+     "Anchored": true,
+     "BottomSurface": "Smooth",
+     "CanCollide": false,
+     "Color": [
+      1,
+      1,
+      1
+     ],
+     "Material": "SmoothPlastic",
+     "CFrame": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      2,
+      -40
+     ],
+     "Size": [
+      16,
+      1,
+      12
+     ],
+     "TopSurface": "Smooth",
+     "Transparency": 1,
+     "CanTouch": true
+    }
+   },
+   "FinalPedestal": {
+    "$className": "Part",
+    "$properties": {
+     "Anchored": true,
+     "BottomSurface": "Smooth",
+     "CanCollide": true,
+     "Color": [
+      0.4,
+      0.4,
+      0.45
+     ],
+     "Material": "Slate",
+     "CFrame": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      2.5,
+      -54
+     ],
+     "Size": [
+      2,
+      3,
+      2
+     ],
+     "TopSurface": "Smooth"
+    },
+    "Interact": {
+     "$className": "ProximityPrompt",
+     "$properties": {
+      "ActionText": "Face",
+      "ObjectText": "The truth",
+      "HoldDuration": 0,
+      "MaxActivationDistance": 6,
+      "RequiresLineOfSight": false
+     }
+    }
+   },
+   "CandleTable": {
+    "$className": "Part",
+    "$properties": {
+     "Anchored": true,
+     "BottomSurface": "Smooth",
+     "CanCollide": true,
+     "Color": [
+      0.35,
+      0.25,
+      0.15
+     ],
+     "Material": "Wood",
+     "CFrame": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      -5,
+      2,
+      -54
+     ],
+     "Size": [
+      4,
+      2,
+      2
+     ],
+     "TopSurface": "Smooth"
+    }
+   },
+   "SecretRoomTrigger": {
+    "$className": "Part",
+    "$properties": {
+     "Anchored": true,
+     "BottomSurface": "Smooth",
+     "CanCollide": false,
+     "Color": [
+      1,
+      1,
+      1
+     ],
+     "Material": "SmoothPlastic",
+     "CFrame": [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      2,
+      -52
+     ],
+     "Size": [
+      16,
+      1,
+      12
+     ],
+     "TopSurface": "Smooth",
+     "Transparency": 1,
+     "CanTouch": true
+    }
+   }
+  }
+ }
+}
